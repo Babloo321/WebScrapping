@@ -10,7 +10,7 @@ function cb(err, res, body){
         handleHtml(body);
     }
 }
-
+ 
 function handleHtml(html){
     let selecTool = cheerio.load(html);
     let coronaStatusArr = selecTool(".maincounter-number");
